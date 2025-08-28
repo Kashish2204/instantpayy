@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Slider from "@/Component/Slider";
+// import Slider from "@/Component/Slider";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -75,7 +75,6 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-            <h2 className="text-2xl text-gray-600 font-normal mb-2">
             <h2 className="text-2xl text-gray-600 font-normal mb-2">
               CONNECTED BANKING
             </h2>
@@ -486,19 +485,97 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-[800px] bg-white flex flex-col items-center justify-center gap-24 text-black py-24 px-6">
-  <div className="flex flex-col lg:flex-row gap-16 items-center w-full max-w-7xl mx-auto">
-    <div className="lg:w-1/2 text-center lg:text-left">
-      <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800">
-        Companies at all stages use Instantpay
-      </h1>
-    </div>
-    <div className="lg:w-1/2">
-      {/* <Slider /> */}
-    </div>
-  </div>
-</section>
+      <section className="h-full bg-white flex flex-col items-center justify-center gap-42 text-black py-24 px-6">
+        <div className="flex flex-row gap-52 ">
+          <div>
+            <h1 className="text-5xl font-bold">
+              Companies at all stage use Instantpay
+            </h1>
+          </div>
+          <div>
+            {/* <Image
+              src="/images/slider/signzy.svg"
+              width={600}
+              height={400}
+              alt="Picture of the author"
+              className="mx-auto rounded-lg"
+            /> */}
+            {/* <Slider /> */}
+          </div>
+        </div>
 
+        <div className="flex flex-row gap-52">
+          <div>
+            <Image
+              src="/images/scan.svg"
+              width={150}
+              height={80}
+              alt="Picture of the author"
+              className="mx-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <h1>Scan the QR to Download Our App</h1>
+            <Image
+              src="/images/image.png"
+              width={150}
+              height={80}
+              alt="Picture of the author"
+              className="mx-auto rounded-lg"
+            />
+            <Image
+              src="/images/apple.png"
+              width={150}
+              height={80}
+              alt="Picture of the author"
+              className="mx-auto rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className=" bg-[url('/images/SL-072622-51930-14.jpg')] bg-cover bg-center w-full relative  text-white  flex flex-col justify-center items-center overflow-hidden">
+            {/* <section className="relative bg-[#0b0f1a] text-white  flex flex-col justify-center items-center overflow-hidden"> */}
+                
+               <div className=" bg-cover bg-center bg-black/80 w-full">
+                   {/* <CursorGlow> */}
+                    {/* Center content */}
+                    <div className="relative z-10 text-center px-6">
+                         {/* Logo in center (replace with your logo image if you want) */}
+                    <div className="pb-10 flex justify-center">
+                         <Image
+                                src="/images/logo_hero.svg"
+                                alt="Instantpay Logo"
+                                width={250}
+                                height={250}
+                            />
+                        </div>
+                        {/* Heading */}
+                        <h1
+                            className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-3xl mx-auto
+                                        bg-[linear-gradient(to_right,#77A1D3_0%,#79CBCA_51%,#77A1D3_100%)]
+                                        text-transparent bg-clip-text"
+                            >
+                            Experience Fast, Flexible &amp; Transparent Way to Bank
+                            </h1>
+
+
+                        {/* Buttons */}
+                        <div className="mt-8 flex justify-center gap-4 pb-40">
+                            <button className="px-7 py-2 bg-blue-700  text-white rounded-xl text-md font-bold transition">
+                                Get Started
+                            </button>
+                            <button className="px-7 py-2 border border-gray-400 text-white rounded-xl text-md font-bold transition">
+                                Contact Sales
+                            </button>
+                        </div>
+                    </div>
+                    {/* </CursorGlow> */}
+                </div>
+                
+
+                
+            </section>
     </div>
   );
 }
