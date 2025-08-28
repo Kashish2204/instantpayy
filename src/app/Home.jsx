@@ -76,6 +76,7 @@ export default function Home() {
           </div>
           <div className="w-full lg:w-1/2 text-left">
             <h2 className="text-2xl text-gray-600 font-normal mb-2">
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">
               CONNECTED BANKING
             </h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
