@@ -3,21 +3,26 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Slider from "@/Component/Slider";
 import { PiLinkSimpleBold } from "react-icons/pi";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="bg-[url('/images/header.svg')] w-full bg-cover bg-center">
       <section className="w-full relative overflow-hidden text-center text-white py-24 px-6 ">
-        {/* ✅ Removed grid.svg overlay for a clean background */}
-
         <div className="relative max-w-4xl mx-auto">
           <span className="px-6 py-2 text-sm border rounded-full border-gray-500 font-normal bg-black/20 backdrop-blur-sm">
             MODERN BUSINESS BANKING
           </span>
 
-          <h1 className="mt-6 text-4xl md:text-6xl font-extrabold leading-tight">
-            Welcome to the World of <br />
-            <span className="text-blue-200">New Age Banking</span>
+          <h1
+            className="mt-6 text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl mx-auto 
+               bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent"
+          >
+            Welcome to the World of
+            <span className="bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent">
+              {" "}
+              New Age Banking
+            </span>
           </h1>
 
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-200">
@@ -70,7 +75,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-           <h2 className="text-2xl text-gray-600 font-normal mb-2">
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">
               CONNECTED BANKING
             </h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
@@ -99,7 +104,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-            <p className="text-2xl text-gray-600 font-normal mb-2">Payouts</p>
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">Payouts</h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
               Payments Made
               <br /> Simple
@@ -133,7 +138,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-           <h2 cclassName="text-2xl text-gray-600 font-normal mb-2">
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">
               Collections
             </h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
@@ -172,7 +177,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-           <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">CARDS</h2>
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">CARDS</h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
               Take Complete Control of Business Spending
             </h2>
@@ -203,7 +208,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-           <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">
               Working Capital
             </h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
@@ -305,7 +310,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-left">
-           <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
+            <h2 className="text-2xl text-gray-600 font-normal mb-2">
               Insurance
             </h2>
             <h2 className="text-5xl text-black font-bold mb-4 leading-[60px]">
@@ -361,7 +366,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-full  flex flex-row flex-col items-center justify-center gap-22 text-white py-24 px-6 relative overflow-hidden">
+      <section className="h-full  flex flex-row flex-col items-center justify-center gap-12 text-white py-24 px-6 relative overflow-hidden">
         <div>
           <Image
             src="/images/api.svg"
@@ -371,20 +376,28 @@ export default function Home() {
             className="mx-auto rounded-lg"
           />
         </div>
-        <div className="text-center py-20">
+        <div className="text-left py-20">
           <div className="max-w-3xl mx-auto px-6">
             {/* Heading */}
-            <h1 className="text-4xl md:text-5xl font-bold text-white  mb-6 leading-tight">
-              API Suite Made for Developers <br /> By Developers
+            <h1
+              className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto 
+               bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent 
+               leading-[80px]"
+            >
+              API Suite <br /> Made for Developers <br /> By Developers
             </h1>
 
             {/* Buttons */}
-            <div className="flex justify-center gap-6 mt-8">
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium shadow-md hover:bg-blue-700 transition">
-                Get Started
+            <div className="flex justify-start gap-6 mt-8">
+              <button
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium shadow-md 
+                   hover:bg-blue-700 transition flex items-center gap-x-2"
+              >
+                Get Started <FaArrowRight />
               </button>
-              <button className="px-6 py-3 bg-white text-blue-600 border border-blue-600 rounded-lg font-medium hover:bg-blue-50 transition">
-                Know More
+
+              <button className="px-6 py-3 bg-white text-black border border-blue-600 rounded-lg font-medium hover:bg-blue-50 transition">
+                Read API Documentation
               </button>
             </div>
           </div>
@@ -392,61 +405,71 @@ export default function Home() {
       </section>
 
       <section className="h-full  flex flex-row flex-col items-center justify-center gap-12 text-white py-24 px-6 relative overflow-hidden">
-        <div>
+        <div className="w-150">
           <div>
-            <h1>Don’t Lose Sleep Over Security</h1>
-            <p>
+            <h1
+              className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto text-left
+               bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent 
+               leading-[80px]"
+            >
+              Don’t Lose Sleep Over Security
+            </h1>
+
+            <p
+              className="text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto text-white 
+              leading-relaxed"
+            >
               Harness cutting-edge security features to shield your enterprise
               from sophisticated threats, allowing you to confidently scale your
               business and protect your assets and data.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 px-6 text-center">
-            <div className="flex flex-col items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-12 px-12 text-left">
+            <div className="flex flex-col items-left">
               <Image
                 src="/images/icon/security1.svg"
                 width={80}
                 height={80}
                 alt="Compliant"
               />
-              <p className="mt-4 text-lg font-medium text-gray-700">
-                100% Compliant
+              <p className="mt-4 text-md font-medium text-white">
+                100% <br /> Compliant
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-left">
               <Image
                 src="/images/icon/security2.svg"
                 width={80}
                 height={80}
                 alt="SSL & 2FA"
               />
-              <p className="mt-4 text-lg font-medium text-gray-700">
-                SSL & 2FA Secured
+              <p className="mt-4 text-md font-medium text-white">
+                SSL & 2FA <br /> Secured
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-left">
               <Image
                 src="/images/icon/security3.svg"
                 width={80}
                 height={80}
                 alt="Security Audits"
               />
-              <p className="mt-4 text-lg font-medium text-gray-700">
-                Regular Security Audits
+              <p className="mt-4 text-md font-medium text-white">
+                Regular Security <br /> Audits
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-left">
               <Image
                 src="/images/icon/security4.svg"
                 width={80}
                 height={80}
                 alt="Fraud Monitoring"
               />
-              <p className="mt-4 text-lg font-medium text-gray-700">
-                Fraud Monitoring
+              <p className="mt-4 text-md font-medium text-white">
+                Fraud <br /> Monitoring
               </p>
             </div>
           </div>
@@ -462,238 +485,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-full bg-white flex flex-col items-center justify-center gap-42 text-black py-24 px-6">
-        <div className="flex flex-row gap-52 ">
-          <div>
-            <h1 className="text-5xl font-bold">
-              Companies at all stage use Instantpay
-            </h1>
-          </div>
-          <div>
-            {/* <Image
-              src="/images/slider/signzy.svg"
-              width={600}
-              height={400}
-              alt="Picture of the author"
-              className="mx-auto rounded-lg"
-            /> */}
-            <Slider />
-          </div>
-        </div>
+      <section className="h-[800px] bg-white flex flex-col items-center justify-center gap-24 text-black py-24 px-6">
+  <div className="flex flex-col lg:flex-row gap-16 items-center w-full max-w-7xl mx-auto">
+    <div className="lg:w-1/2 text-center lg:text-left">
+      <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800">
+        Companies at all stages use Instantpay
+      </h1>
+    </div>
+    <div className="lg:w-1/2">
+      {/* <Slider /> */}
+    </div>
+  </div>
+</section>
 
-        <div className="flex flex-row gap-52">
-          <div>
-            <Image
-              src="/images/scan.svg"
-              width={150}
-              height={80}
-              alt="Picture of the author"
-              className="mx-auto rounded-lg"
-            />
-          </div>
-          <div>
-            <h1>Scan the QR to Download Our App</h1>
-            <Image
-              src="/images/image.png"
-              width={150}
-              height={80}
-              alt="Picture of the author"
-              className="mx-auto rounded-lg"
-            />
-            <Image
-              src="/images/apple.png"
-              width={150}
-              height={80}
-              alt="Picture of the author"
-              className="mx-auto rounded-lg"
-            />
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
-// import { FaLinkedin, FaFacebook, FaXTwitter, FaYoutube } from "react-icons/fa6";
-// import Image from "next/image";
-// import Link from "next/link";
-// import CursorGlow from "./cursoreffect";
-
-
-// export default function Homepage () {
-//     return (
-//         <>
-            
-//             <section className=" bg-[url('/images/SL-072622-51930-14.jpg')] bg-cover bg-center w-full relative  text-white  flex flex-col justify-center items-center overflow-hidden">
-//             {/* <section className="relative bg-[#0b0f1a] text-white  flex flex-col justify-center items-center overflow-hidden"> */}
-                
-//                 <div className=" bg-cover bg-center bg-black/80 w-full">
-//                     <CursorGlow>
-//                     {/* Center content */}
-//                     <div className="relative z-10 text-center px-6">
-//                         {/* Logo in center (replace with your logo image if you want) */}
-//                         <div className="pb-10 flex justify-center">
-//                             <Image
-//                                 src="/images/logo_hero.svg"
-//                                 alt="Instantpay Logo"
-//                                 width={250}
-//                                 height={250}
-//                             />
-//                         </div>
-//                         {/* Heading */}
-//                         <h1
-//                             className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-3xl mx-auto
-//                                         bg-[linear-gradient(to_right,#77A1D3_0%,#79CBCA_51%,#77A1D3_100%)]
-//                                         text-transparent bg-clip-text"
-//                             >
-//                             Experience Fast, Flexible &amp; Transparent Way to Bank
-//                             </h1>
-
-
-//                         {/* Buttons */}
-//                         <div className="mt-8 flex justify-center gap-4 pb-40">
-//                             <button className="px-7 py-2 bg-blue-700  text-white rounded-xl text-md font-bold transition">
-//                                 Get Started
-//                             </button>
-//                             <button className="px-7 py-2 border border-gray-400 text-white rounded-xl text-md font-bold transition">
-//                                 Contact Sales
-//                             </button>
-//                         </div>
-//                     </div>
-//                     </CursorGlow>
-//                 </div>
-                
-
-                
-//             </section>
-            
-//             <section className="bg-[#0f0f12] text-gray-300 py-15">
-
-//                 <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-5 lg:gap-20">
-//                     <div className="w-full  md:w-1/3  space-y-4">
-//                     {/* Logo (replace /instantpay-logo.svg with your logo) */}
-//                         <div className="flex items-start gap-2">
-//                             <Image
-//                             src="/images/footer_logo.svg"
-//                             alt="Instantpay Logo"
-//                             width={30}
-//                             height={30}
-//                             />
-//                             <span className="text-white font-semibold text-xl">instantpay</span>
-//                         </div>
-//                         <p className="text-gray-400 text-sm leading-relaxed">
-//                             Instantpay is a modern digital banking and identity verification
-//                             platform for businesses. It offers a unified dashboard for managing
-//                             accounts, payments, and more, along with secure APIs to automate
-//                             workflows.
-//                         </p>
-//                     </div>
-
-//                     <div className="w-full lg:w-2/3 py-12 grid grid-cols-2 md:grid-cols-4 gap-10">
-//                         {/* Products */}
-//                         <div>
-//                             <h3 className="text-white font-semibold mb-4">Products</h3>
-//                             <ul className="space-y-2 text-sm">
-//                                 <li><Link href="#" className="flex items-center gap-1">Payouts <span className="block md:hidden text-2xl">+</span></Link></li>
-//                                 <li><Link href="#" className="flex items-center gap-1">Collections <span className="block md:hidden text-2xl">+</span></Link></li>
-//                                 <li><Link href="#" className="flex items-center gap-1">Card <span className="block md:hidden text-2xl">+</span></Link></li>
-//                                 <li><Link href="#" className="flex items-center gap-1">Insurance <span className="block md:hidden text-2xl">+</span></Link></li>
-//                                 <li><Link href="#">Loans</Link></li>
-//                                 <li><Link href="#">Utility Payments</Link></li>
-//                                 <li><Link href="#">Digi Kendra</Link></li>
-//                                 <li><Link href="#" className="flex items-center gap-1">Verification <span className="block md:hidden text-2xl">+</span></Link></li>
-//                             </ul>
-//                         </div>
-
-//                         {/* Solutions */}
-//                         <div>
-//                             <h3 className="text-white font-semibold mb-4">Solutions</h3>
-//                             <ul className="space-y-2 text-sm">
-//                                 <li><Link href="#">E-commerce</Link></li>
-//                                 <li><Link href="#">Logistics</Link></li>
-//                                 <li><Link href="#">Insurance</Link></li>
-//                                 <li><Link href="#">Lending</Link></li>
-//                                 <li><Link href="#">Marketplace</Link></li>
-//                                 <li><Link href="#">Education</Link></li>
-//                                 <li><Link href="#">FMCG</Link></li>
-//                                 <li><Link href="#">Healthcare</Link></li>
-//                             </ul>
-//                         </div>
-
-//                         {/* Company */}
-//                         <div>
-//                             <h3 className="text-white font-semibold mb-4">Company</h3>
-//                             <ul className="space-y-2 text-sm">
-//                                 <li><Link href="#">About Us</Link></li>
-//                                 <li><Link href="#">Our Blog</Link></li>
-//                                 <li className="flex items-center gap-2">
-//                                 <Link href="#">Careers</Link>
-//                                 <span className="bg-blue-900 text-white text-xs px-2 py-1 rounded-full">Hiring!</span>
-//                                 </li>
-//                                 <li><Link href="#">Contact Us</Link></li>
-//                             </ul>
-//                         </div>
-
-//                         {/* Resources */}
-//                         <div>
-//                             <h3 className="text-white font-semibold mb-4">Resources</h3>
-//                             <ul className="space-y-2 text-sm">
-//                                 <li><Link href="#">Financial Calculators</Link></li>
-//                                 <li><Link href="#">Disclosures</Link></li>
-//                                 <li><Link href="#">Policy Center</Link></li>
-//                             </ul>
-//                         </div>
-
-//                     </div>
-//                 </div>
-//             </section>
-
-
-//             <footer className="bg-[#0f0f12] text-gray-300 text-sm">
-//                 <div className="max-w-7xl mx-auto px-6 py-10 border-t border-gray-800">
-//                     {/* Social Icons */}
-//                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-//                         <div className="flex items-center gap-5">
-//                             <span className=" text-[14px]">Follow us On</span>
-//                             <a href="#" className="p-2 rounded bg-gray-800 hover:bg-gray-600 transition">
-//                             <FaLinkedin className="w-5 h-5" />
-//                             </a>
-//                             <a href="#" className="p-2 rounded bg-gray-800 hover:bg-gray-600 transition">
-//                             <FaFacebook className="w-5 h-5" />
-//                             </a>
-//                             <a href="#" className="p-2 rounded bg-gray-800 hover:bg-gray-600 transition">
-//                             <FaXTwitter className="w-5 h-5" />
-//                             </a>
-//                             <a href="#" className="p-2 rounded bg-gray-800 hover:bg-gray-600 transition">
-//                             <FaYoutube className="w-5 h-5" />
-//                             </a>
-//                         </div>
-
-//                         <div className="text-white flex items-center gap-2">
-//                             Crafted in Bharat with <span className="text-pink-500">❤</span>
-//                         </div>
-//                     </div>
-
-//                     {/* Bottom Text */}
-//                     <div className="space-y-3 text-gray-400 text-xs mt-8">
-//                         <p className="text-2xl text-[14px] ">© 2025 Instantpay India Limited</p>
-//                         <div className="text-xl text-[12px]">
-//                             <p>
-//                                 Instantpay is not a bank but a technology platform for digital financial services, 
-//                                 advisory in partnership with RBI licensed Banks and IRDAI licensed Insurers. 
-//                                 All funds in the customer&apos;s bank account are insured as per limits under the RBI&apos;s deposit insurance scheme.
-//                             </p>
-//                             <p>
-//                                 Corporate Identity Number: U64200DL2010PLC206587 | IRDAI Corporate Agency Registration Number: CA0686
-//                             </p>
-//                             <p>
-//                                 Never share your password, card number, expiry date, CVV, PIN, OTP or other confidential information 
-//                                 with anyone even if the person claims to be from Instantpay.
-//                             </p>
-//                         </div>
-                        
-//                     </div>
-//                 </div>
-//             </footer>
-//         </>
-//     )
-// }

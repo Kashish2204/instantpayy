@@ -1,7 +1,16 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// Import necessary Swiper modules
+// import { Autoplay } from "swiper/modules/autoplay";
+// import { Pagination } from "swiper/modules/pagination";
+// import { Navigation } from "swiper/modules/navigation";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Slider() {
   return (
@@ -52,7 +61,7 @@ export default function Slider() {
         {/* Slide 4 */}
         <SwiperSlide>
           <Image
-             src="/images/slider/signzy.svg"
+            src="/images/slider/signzy.svg"
             width={600}
             height={400}
             alt="Slide 4"
@@ -63,7 +72,7 @@ export default function Slider() {
         {/* Slide 5 */}
         <SwiperSlide>
           <Image
-             src="/images/slider/signzy.svg"
+            src="/images/slider/signzy.svg"
             width={600}
             height={400}
             alt="Slide 5"
@@ -74,7 +83,7 @@ export default function Slider() {
         {/* Slide 6 */}
         <SwiperSlide>
           <Image
-             src="/images/slider/signzy.svg"
+            src="/images/slider/signzy.svg"
             width={600}
             height={400}
             alt="Slide 6"
